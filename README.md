@@ -45,7 +45,9 @@ $geo = new HelperGeo($api_key);
  * $lat (Latitude)
  * $lon (Longitude)
  * $details (Array of the data you want to return from this location)
- * $types (Set this to 1 if you want to get the list of types found for this location)
+ * $types (Set this to 1 if you want to get the list of types found for this location. For example
+ * it may show multiple values like "Premise, Hospital, Place of Business" etc. This is not needed,
+ * I just added it in case you may have a use for it)
 */
 $location_details = $geo->getLocationByLatLon($lat,$lon,$details,1);
     
