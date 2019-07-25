@@ -27,12 +27,14 @@ $lon = '-90.048981';
 $details = array(
   'address',
   'street',
+  'streetnum',
+  'streetname',
   'city',
   'stateabb',
   'state',
   'postal',
   'country',
-  'countrycode',
+  'countryabb',
   'neighborhood',
   'county'
 );
