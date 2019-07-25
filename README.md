@@ -53,6 +53,6 @@ $location_details = $geo->getLocationByLatLon($lat,$lon,$details,1);
     
 /* We just dump out the result. Which will return either an array of the data you requested or it
  * will return an array with an error message. You can use this to check for an error or not. It
- * will be stored in an error under error. So in this case $location_details['error']
+ * will be stored under the key name, error. So in this case $location_details['error']
 var_dump($location_details);
 ```
