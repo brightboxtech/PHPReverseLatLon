@@ -87,13 +87,25 @@
                                     
                                 break;
                                 
+                                case 'streetnum':
+                                    
+                                    $map_details[$curr_request] = $this->findMapContentByName('street_number',$map_array->results[0]->address_components);
+                                    
+                                break;
+                                    
+                                case 'streetname':
+                                    
+                                    $map_details[$curr_request] = $this->findMapContentByName('route',$map_array->results[0]->address_components);
+                                    
+                                break;
+                                
                                 case 'postal':
                                     
                                     $map_details[$curr_request] = $this->findMapContentByName('postal_code',$map_array->results[0]->address_components);
                                     
                                 break;
                                 
-                                case 'countrycode':
+                                case 'countryabb':
                                     
                                     $map_details[$curr_request] = $this->findMapContentByName('country',$map_array->results[0]->address_components,TRUE);
                                     
